@@ -160,3 +160,13 @@ $ bean-report example.beancount print
 ```
 
 Note that the original template, on 2022-01-01, is not present in this output. This is always true: if a template's schedule would not generate its original date when evaluated, the template Transaction will not be produced.
+
+### Options
+
+Additionally, the following options are available which modify the entries of the plugin:
+1. `only_past_transactions`
+
+Default: Not set
+
+Only generates transactions before today's date.
+
